@@ -7,7 +7,7 @@ import certifi
 
 ca = certifi.where()
 
-cluster = MongoClient("mongodb+srv://narashimantarun:nnohdI3YFye8pqsL@cluster0.k1tq2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",tlsCAFile=ca)
+cluster = MongoClient("mongodb+srv:###url",tlsCAFile=ca)
 db = cluster['test']
 collection = db['logindetails']
 
